@@ -1,0 +1,24 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+// Wi-Fi Network Credentials
+#define WIFI_SSID "YOUR_WIFI_SSID"
+#define WIFI_PASSWORD "YOUR_WIFI_PASSWORD"
+
+// Backend Server API Endpoint Configuration
+#define BACKEND_SENSOR_URL "http://192.168.1.100:5000/api/sensors/readings"
+#define DEVICE_CODE "ESP32-HW-NODE-01"
+#define DEVICE_TOKEN "esp32-secure-device-token-123"
+
+// Sensor Sampling & Hardware Pinout Configuration
+#define SAMPLING_INTERVAL_MS 100 // 10Hz sampling frequency
+#define PIN_SDA 21
+#define PIN_SCL 22
+#define PIN_BUZZER 25
+#define PIN_BUTTON 4
+
+// Fall Thresholds (Hardware Pre-Filter)
+#define IMPACT_THRESHOLD_G 2.5
+#define FREEFALL_THRESHOLD_G 0.5
+
+#endif
